@@ -6,7 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Video extends Model
 {
-    return [
-        
-    ];
+    return [];
 }

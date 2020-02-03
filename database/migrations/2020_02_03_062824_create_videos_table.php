@@ -6,16 +6,18 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateVideosTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
         Schema::create('videos', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->String('id');
+            $table->String('Link');
+            $table->String('title');
+            $table->String('discription');
+            $table->integer('price');
             $table->timestamps();
+
+            
         });
     }
 
